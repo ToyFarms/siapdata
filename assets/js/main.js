@@ -79,13 +79,13 @@ jQuery(document).on(
     /*--------------------------
        FOOTER REVAL
     ----------------------------*/
-    var window_width = $(window).width();
-    if (window_width > 900) {
-      $(".footer-area").footerReveal({
-        shadow: false,
-        zIndex: -999,
-      });
-    }
+    // var window_width = $(window).width();
+    // if (window_width > 900) {
+    //   $(".footer-area").footerReveal({
+    //     shadow: false,
+    //     zIndex: -999,
+    //   });
+    // }
 
     /*--------------------------
        PARALLAX BACKGROUND
