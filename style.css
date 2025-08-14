@@ -1678,6 +1678,7 @@ BOX HOVER 8
     position: relative;
     background: #ffffff;
     z-index: 1;
+    min-height: 400px;
 }
 
 .single-testmonial::after {
