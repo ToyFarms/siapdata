@@ -193,6 +193,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+z-index: -2;
 }
 
 .area-bg::after,
@@ -2199,6 +2200,8 @@ BOX HOVER 8
 
 .home2-layer-1 img {
   width: 80%;
+  position: relative;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 1920px) {
