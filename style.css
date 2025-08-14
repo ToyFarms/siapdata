@@ -4190,14 +4190,18 @@ ul.products .product img {
 }
 
 .copyright > p {
+  margin-top: 1rem;
   font-size: 1.3rem;
   color: white;
+  width: 80%;
+  text-align: center;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
   min-height: 100px;
+  width: 100%;
 }
 
 .links {
