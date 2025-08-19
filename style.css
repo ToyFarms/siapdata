@@ -4255,8 +4255,10 @@ ul.products .product img {
 #hero-img {
   position: relative;
 }
+
 #hero-img > img {
   box-shadow: 0 0 100px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
 }
 
 #hero-img::after {
