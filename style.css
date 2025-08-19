@@ -193,7 +193,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-z-index: -2;
+  z-index: -2;
 }
 
 .area-bg::after,
@@ -1162,8 +1162,9 @@ BOX HOVER 8
   height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
+  flex-direction: row;
 }
 
 .welcome-text h4 {
@@ -2467,8 +2468,8 @@ BOX HOVER 8
 }
 
 .about-area .area-image-content > img {
-  margin-left: -50px;
-  width: 100%;
+  margin-left: 50%;
+  width: 50%;
 }
 
 .owl-item.active.center .single-screen img {
@@ -2614,9 +2615,9 @@ BOX HOVER 8
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .about-area .area-image-content > img {
-    margin-left: 0;
-  }
+  /* .about-area .area-image-content > img { */
+  /*   margin-left: 0; */
+  /* } */
 
   .single-process-box-two {
     padding: 0 30px 50px;
@@ -2625,7 +2626,8 @@ BOX HOVER 8
 
 @media (min-width: 768px) and (max-width: 991px) {
   .about-area .area-image-content > img {
-    margin-left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
   .single-process-box-two {
@@ -4248,4 +4250,31 @@ ul.products .product img {
 
 #page-links a:hover {
   --underline-width: 100%;
+}
+
+#hero-img {
+  position: relative;
+}
+#hero-img > img {
+  box-shadow: 0 0 100px 2px rgba(0, 0, 0, 0.2);
+}
+
+#hero-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("siapdata/sc4.png");
+  z-index: -1;
+  transform: translate(0, 20%) rotate(10deg);
+  filter: blur(0.3rem);
+}
+
+#hero-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("siapdata/sc1.png");
+  z-index: -1;
+  transform: translate(-40%, 20%) rotate(-10deg);
+  filter: blur(0.3rem);
 }
