@@ -2494,7 +2494,7 @@ BOX HOVER 8
 }
 
 .about-area .area-image-content > img {
-  margin-left: 50%;
+  margin-left: 25%;
   width: 50%;
 }
 
@@ -2663,7 +2663,7 @@ BOX HOVER 8
 
 @media only screen and (max-width: 767px) {
   .about-area .area-image-content > img {
-    margin-left: 0;
+    margin-left: 50%;
   }
 }
 
