@@ -3,6 +3,53 @@ jQuery(document).on(
   (function ($) {
     "use strict";
 
+    function forceTwoLines(el, { minFont = 10, maxFont = 72 } = {}) {
+      el.style.boxSizing = el.style.boxSizing || "border-box";
+      const eps = 0.5;
+      const getLines = () => {
+        const s = window.getComputedStyle(el);
+        let lh = parseFloat(s.lineHeight);
+        if (Number.isNaN(lh)) lh = parseFloat(s.fontSize) * 1.2;
+        const h = el.getBoundingClientRect().height;
+        return Math.max(1, Math.floor((h + eps) / lh));
+      };
+
+      const cs = window.getComputedStyle(el);
+      let size = Math.round(parseFloat(cs.fontSize)) || 16;
+      let lines = getLines();
+
+      if (lines > 2) {
+        while (size > minFont) {
+          size -= 1;
+          el.style.fontSize = size + "px";
+          lines = getLines();
+          if (lines <= 2) break;
+        }
+        if (lines > 2) {
+          el.style.fontSize = size + "px";
+          return { fontSize: size, lines };
+        }
+      }
+
+      while (size < maxFont) {
+        size += 1;
+        el.style.fontSize = size + "px";
+        lines = getLines();
+        if (lines >= 3) {
+          size -= 1;
+          el.style.fontSize = size + "px";
+          lines = getLines();
+          break;
+        }
+      }
+
+      return { fontSize: size, lines };
+    }
+
+    const t = document.querySelector(".welcome-text > h1");
+    forceTwoLines(t, { minFont: 40 });
+    window.addEventListener("resize", () => forceTwoLines(t, { minFont: 40 }));
+
     /*--------------------------
         STICKY MAINMENU
     ---------------------------*/
