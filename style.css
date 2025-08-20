@@ -2067,7 +2067,7 @@ BOX HOVER 8
 }
 
 .single-contact .contact-icon {
-  color: #5368fd;
+  color: var(--primary);
   font-size: 40px;
   left: 0;
   position: absolute;
