@@ -902,7 +902,8 @@ ul#nav li.active > a::after {
 
 @media only screen and (max-width: 767px) {
     .home-two .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%) repeat scroll 0 0;
+        /* background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%) repeat scroll 0 0; */
+        background: transparent repeat scroll 0 0;
     }
 
     .home-two ul#nav li a {
