@@ -1707,7 +1707,10 @@ BOX HOVER 8
   position: relative;
   background: #ffffff;
   z-index: 1;
-  min-height: 400px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .single-testmonial::after {
@@ -4324,3 +4327,5 @@ ul.products .product img {
   display: flex;
   flex-wrap: nowrap;
 }
+
+
