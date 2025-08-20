@@ -292,13 +292,13 @@ ul#nav li.hover > a,
 .is-sticky ul#nav li.hover > a,
 .is-sticky ul#nav li.current-menu-parent > a,
 .is-sticky ul#nav li.current-menu-item > a {
-    color: #5368fd;
+    color: var(--primary);
 }
 
 .is-sticky ul#nav li ul a:hover,
 ul#nav li ul a:hover {
-    /*background: #5368fd none repeat scroll 0 0;*/
-    color: #5368fd;
+    /*background: var() none repeat scroll 0 0;*/
+    color: var(--primary);
 }
 
 .is-sticky .mainmenu-area {
@@ -872,12 +872,13 @@ ul#nav li.active > a::after {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .home-two .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%) repeat scroll 0 0;
+        /* background: rgba(0, 0, 0, 0) linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat scroll 0 0; */
+        background: transparent repeat scroll 0 0;
     }
 
     .home-two ul#nav li a {
         height: 40px;
-        color: #4431a7 !important;
+        color: var(--primary-30) !important;
         font-weight: 400 !important;
     }
 
@@ -894,7 +895,7 @@ ul#nav li.active > a::after {
     .home-two ul#nav li.current-menu-item > a,
     .home-two ul#nav li.hover > a,
     .home-two ul#nav li.open.menu-item-has-children > a {
-        background: #4431a7 !important;
+        background: var(--primary) !important;
         color: #ffffff !important;
     }
 }

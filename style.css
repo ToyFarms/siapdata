@@ -36,6 +36,20 @@ Version: 2.0
 
 ----------------------------------------------------------------------------------------*/
 
+:root {
+  /* --primary: #614dc7; */
+  /* --secondary: #4431a7; */
+  /* --primary-30: #958bc7; */
+
+  --primary: #3784b3;
+  --primary-30: #6b97b3;
+  --secondary: #a3cbe3;
+
+  /* --primary: red; */
+  /* --secondary: brown; */
+  /* --primary-30: green; */
+}
+
 body {
   background-color: #5170fc;
 }
@@ -73,23 +87,23 @@ header {
 }
 
 .purple-btn {
-  background: #4431a7 none repeat scroll 0 0;
+  background: var(--secondary) none repeat scroll 0 0;
   color: #ffffff;
 }
 
 .purple-btn:hover {
   background: #ffffff none repeat scroll 0 0;
-  color: #4431a7;
+  color: var(--secondary);
 }
 
 .soft-purple-btn {
-  background: #614dc7 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
   color: #ffffff;
 }
 
 .soft-purple-btn:hover {
   background: #fff;
-  color: #614dc7;
+  color: var(--primary);
 }
 
 /*---------------------------
@@ -160,8 +174,9 @@ header {
 ----------------------------------*/
 
 .scrolltotop {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
   border-radius: 50%;
   bottom: 20px;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
@@ -231,7 +246,7 @@ header {
 }
 
 .subtitle {
-  color: #5368fd;
+  color: var(--primary);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -1478,7 +1493,7 @@ BOX HOVER 8
 
 .process-icon i {
   background: rgba(0, 0, 0, 0)
-    linear-gradient(135deg, rgb(88, 75, 251) 0%, rgb(69, 170, 253) 99%);
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%);
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -1518,7 +1533,7 @@ BOX HOVER 8
 
 .single-process-box:hover::after {
   background: rgba(0, 0, 0, 0)
-    linear-gradient(135deg, rgb(88, 75, 251) 0%, rgb(69, 170, 253) 99%) repeat
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
     scroll 0 0;
 }
 
@@ -2091,82 +2106,90 @@ BOX HOVER 8
 .home-two .welcome-text-area .area-bg {
   background: rgba(0, 0, 0, 0) url("assets/img/home/home-purple-bg.png")
     no-repeat scroll center center / cover;
+  filter: hue-rotate(-20deg);
 }
 
 .home-two .header-call-to-action .action-button,
 .home-two .header-call-to-action .search-button {
-  background: #614dc7 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
 }
 
 .home-two .header-call-to-action .action-button:hover,
 .home-two .header-call-to-action .search-button:hover {
   background: #ffffff none repeat scroll 0 0;
-  color: #614dc7;
+  color: var(--primary);
 }
 
 .home-two .home-button a {
-  background: #4431a7 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
 }
 
 .home-two .home-button a:hover {
   background: #ffffff none repeat scroll 0 0;
-  color: #4431a7;
+  color: var(--primary);
 }
 
 .home-two .single-features .box-icon {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .read-more::before {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .read-more.active:hover::before {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8573e7 0%, #553fbf 99%)
+  background: rgba(0, 0, 0, 0) linear-gradient(135deg, white 0%, white 99%)
     repeat scroll 0 0;
 }
 
 .home-two .video-button button:hover {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .price-menu li.active a {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .single-price:before {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .purchase-button:before {
-  background: linear-gradient(135deg, #553fbf 0%, #8573e7 99%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%);
 }
 
 .home-two .panel.panel-default:before {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .footer-area .area-bg {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%)
-    repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-30) 99%) repeat
+    scroll 0 0;
 }
 
 .home-two .footer-search-form form {
-  background: #5741c4 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
 }
 
 .home-two .footer-subscriber-form form input {
-  background: #8776df none repeat scroll 0 0;
+  background: var(--primary-30) none repeat scroll 0 0;
 }
 
 .home-two .footer-subscriber-form form button {
-  background: #6957c8 none repeat scroll 0 0;
+  background: var(--primary-30) none repeat scroll 0 0;
 }
 
 .home-two .footer-subscriber-form form button:hover {
@@ -2787,7 +2810,7 @@ BOX HOVER 8
 }
 
 .haeder-subscribe-form .subscribe-form button {
-  background: #614dc7 none repeat scroll 0 0;
+  background: var(--primary) none repeat scroll 0 0;
   border: 0 none;
   border-radius: 50px;
   font-size: 14px;
@@ -2803,7 +2826,7 @@ BOX HOVER 8
 
 .haeder-subscribe-form .subscribe-form button:hover {
   background: #ffffff none repeat scroll 0 0;
-  color: #614dc7;
+  color: var(--primary);
 }
 
 @media only screen and (min-width: 1920px) {
@@ -4252,6 +4275,20 @@ ul.products .product img {
   --underline-width: 100%;
 }
 
+@media only screen and (max-width: 992px) {
+  #hero-img {
+    display: none;
+  }
+
+  .container {
+    margin-left: auto !important;
+  }
+}
+
+.container {
+    margin-left: 10rem;
+  }
+
 #hero-img {
   position: relative;
 }
@@ -4261,22 +4298,29 @@ ul.products .product img {
   border-radius: 3rem;
 }
 
-#hero-img::after {
+#hero-img::after,
+#hero-img::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: url("siapdata/sc4.png");
   z-index: -1;
   transform: translate(0, 20%) rotate(10deg);
+  box-shadow: 0 120px 100px 10px #6753ce54;
   filter: blur(0.3rem);
 }
 
+#hero-img::after {
+  background-image: url("siapdata/sc4.png");
+  transform: translate(0, 20%) rotate(10deg);
+}
+
 #hero-img::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background-image: url("siapdata/sc1.png");
-  z-index: -1;
   transform: translate(-40%, 20%) rotate(-10deg);
-  filter: blur(0.3rem);
+}
+
+#nav {
+  display: flex;
+  flex-wrap: nowrap;
 }
