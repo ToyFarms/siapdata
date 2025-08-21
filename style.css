@@ -1203,12 +1203,15 @@ BOX HOVER 8
 .home-button {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 @media only screen and (max-width: 767px) {
   .home-button {
-    flex-direction: column;
-    margin-left: unset;
+    flex-direction: row;
+  justify-content: center;
+    margin-left: 0 !important;
+    transform: none !important;
   }
 
   .home-button a {
@@ -4312,9 +4315,9 @@ ul.products .product img {
 }
 
 .container {
-    margin-left: 10rem;
+  margin-left: 10rem;
   align-self: center;
-  }
+}
 
 #hero-img {
   position: relative;
@@ -4351,5 +4354,3 @@ ul.products .product img {
   display: flex;
   flex-wrap: nowrap;
 }
-
-
